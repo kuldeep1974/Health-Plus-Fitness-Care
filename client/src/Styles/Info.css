@@ -1,0 +1,285 @@
+.div-outer-most{
+   height: 300px;
+   width: 400px; 
+   /* border: 1px solid black;   */
+   /* background-color: darkblue; */
+   transition: transform 0.3s ease; 
+
+}
+.div-outer-most:hover{
+  transform: scale(1.1);
+  
+}
+.div-upper-img1{
+  height: 100%;
+/* background-color: red; */
+background-image: url('https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=1200');
+background-size: cover;
+background-position: center;
+/* display: flex; */
+text-align: center;
+border-radius: 20px;
+
+}
+
+.text-img{
+  font-size: 30px;
+color: white;
+}
+
+.div-upper-img2{
+  font-size: 30px;
+  height: 100%;
+/* background-color: red; */
+background-image: url('https://images.pexels.com/photos/1660027/pexels-photo-1660027.jpeg?auto=compress&cs=tinysrgb&w=1200');
+background-size: cover;
+background-position: center;
+text-align: center;
+border-radius: 20px;
+
+}
+
+
+.div-upper-img3{
+  font-size: 30px;
+  height: 100%;
+/* background-color: red; */
+background-image: url('https://www.godigit.com/content/dam/godigit/directportal/en/the-old-runner-feeling-bad-while-jogging.jpg');
+background-size: cover;
+background-position: center;
+text-align: center;
+color: white;
+border-radius: 20px;
+
+
+}
+
+.div-bottom-text{
+  height: 20%;
+/* background-color: blue; */
+
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+}
+
+.info-cards-content{
+  display: flex;
+  justify-content: space-evenly;
+  /* padding: 40px; */
+}
+
+.info-title{
+  text-align: center;
+}
+
+
+.info-section{
+  margin-top: 100px;
+}
+
+
+
+
+.info-section {
+    padding: 0 32px;
+    text-align: center;
+    background: black;
+
+}
+.info-title-content {
+    margin: 166px 0 128px 0;
+}
+.info-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+.info-title > span {
+    position: relative;
+}
+.info-title span::before {
+    content: '';
+    position: absolute;
+    width: 75%;
+    height: 4px;
+    background-color: #9D2553;
+    border-radius: 8px;
+    left: 0;
+    bottom: -12px;
+}
+.info-description {
+    margin: 64px;
+    text-align: center;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 21px;
+    letter-spacing: .8px;
+    line-height: 1.8rem;
+}
+/* Cards */
+ .info-cards-content {
+    margin: 64px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+.info-cards {
+    height: auto;
+    border: 2px solid #d7d3d3;
+    border-radius: 12px;
+    background-color: white;
+    position: relative;
+}
+.info-card-title {
+    margin: 32px 0 40px 0;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: .8px;
+}
+.info-card-description {
+    margin: 24px;
+    color: rgb(77, 75, 75);
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    letter-spacing: .8px;
+    line-height: 1.5rem;
+}
+.info-card-icon {
+    position: absolute;
+    top: -24px;
+    left: 44%;
+    padding: 10px;
+    background-color: #DCE6FF;
+    border-radius: 30px;
+}
+.info-fa-icon {
+    color: #2C96FF;
+    font-size: 24px;
+}
+
+ @media screen and (max-width: 1000px) {
+    .info-description {
+        margin: 64px 32px;
+    }
+    .info-cards-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 700px) {
+    .info-description {
+        margin: 64px 8px;
+    }
+    .info-cards-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+} 
+
+
+
+body{
+
+  background: #161616;
+  }
+  h1{
+    color:#fff;
+  }
+  .lead{
+    color:#aaa;
+  }
+  
+  .wrapper{margin:10vh}
+ 
+  
+  .card{
+    border: none;
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+   overflow:hidden;
+   border-radius:20px;
+   min-height:450px;
+     box-shadow: 0 0 12px 0 rgba(0,0,0,0.2);
+  
+   @media (max-width: 768px) {
+    min-height:350px;
+  }
+  
+  @media (max-width: 420px) {
+    min-height:300px;
+  }
+  
+   &.card-has-bg{
+   transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    background-size:120%;
+    background-repeat:no-repeat;
+    background-position: center center;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: inherit;
+      -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);}
+  
+    &:hover {
+      transform: scale(0.98);
+       box-shadow: 0 0 5px -2px rgba(0,0,0,0.3);
+      background-size:130%;
+       transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  
+      .card-img-overlay {
+        transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+        background: rgb(255,186,33);
+       background: linear-gradient(0deg, rgba(255,186,33,0.5) 0%, rgba(255,186,33,1) 100%);
+       }
+    }
+  }
+   .card-footer{
+    background: none;
+     border-top: none;
+      .media{
+       img{
+         border:solid 3px rgba(255,255,255,0.3);
+       }
+     }
+   }
+    .card-title{font-weight:800}
+   .card-meta{color:rgba(0,0,0,0.3);
+    text-transform:uppercase;
+     font-weight:500;
+     letter-spacing:2px;}
+   .card-body{ 
+     transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+   
+  
+    }
+   &:hover {
+     .card-body{
+       margin-top:30px;
+       transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+     }
+   cursor: pointer;
+   transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+   .card-img-overlay {
+    transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+   background: rgb(255,186,33);
+  background: linear-gradient(0deg, rgba(255,186,33,0.3785889355742297) 0%, rgba(255,186,33,1) 100%);
+  }
+  }
+   
+
+
+.div-upper-img1, .div-upper-img2, .div-upper-img3 {
+  border: 1px solid white;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+
+}

@@ -1,0 +1,103 @@
+.bodyfat-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  min-width: 430px;
+    /* margin: auto; */
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .tab {
+    padding: 8px 12px;
+    border: none;
+    background: #5c7ea3;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .tab.active {
+    background: white;
+    color: black;
+    border-bottom: 3px solid #5c7ea3;
+  }
+  
+  .bodyfat-form {
+    margin-top: 20px;
+  }
+  
+
+    label {
+      display: flex
+  ;
+      font-size: 16px;
+      margin-bottom: 5px;
+      justify-content: center;
+      align-items: center;
+      gap: 18px;
+  }
+  
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .gender-group {
+    display: flex;
+      margin-bottom: 10px;
+      gap: 65px;
+      justify-content: center;
+  }
+  
+  .gender-option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 21px;
+  }
+  
+  .gender-option input {
+    margin-right: 5px;
+  }
+  
+  .selected {
+    font-weight: bold;
+    color: #5c7ea3;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .calculate-btn {
+    background: green;
+    color: white;
+    border: none;
+    /* padding: 10px 20px; */
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .clear-btn {
+    background: gray;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .bodyfat-result {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  

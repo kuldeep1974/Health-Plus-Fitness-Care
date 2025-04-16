@@ -1,0 +1,34 @@
+.div-cal{
+    display: flex;
+   gap: 400px;
+    justify-content: center;
+    
+}
+
+.about-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: orange;
+}
+.about-title > span {
+    position: relative;
+}
+.about-title span::before {
+    content: '';
+    position: absolute;
+    width: 75%;
+    height: 4px;
+    background-color: #9D2553;
+    border-radius: 8px;
+    left: 0;
+    bottom: -12px;
+}
+
+.col-name-cal{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    margin-top: 230px;
+    align-items: center;
+}

@@ -1,0 +1,146 @@
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.search-bar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-input input {
+    width: 280px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-input button {
+    padding: 8px 15px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-input button:hover {
+    background-color: #0056b3;
+}
+
+.card-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Updated Card Styles */
+.card {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    border: 1px solid #ddd;
+    min-height: 120px;
+    max-height: 140px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+/* Image Styling */
+.card-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: 12px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border: 2px solid #ddd;
+}
+
+.card-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Content inside Card */
+.card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Bigger Title */
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Nutrition Data */
+.card-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #444;
+}
+
+.card-details p {
+    background: #f8f8f8;
+    padding: 5px;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 8px;
+        min-height: auto;
+        max-height: none;
+    }
+
+    .card-img {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 8px;
+    }
+
+    .card-details {
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 13px;
+    }
+
+    .search-input {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .search-input input {
+        width: 100%;
+    }
+}

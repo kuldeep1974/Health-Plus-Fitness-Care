@@ -1,0 +1,8 @@
+{
+    "db_URL":"mongodb://localhost:27017/Fitness_Proj",
+    "port":"9009",
+    "jwtSecreteKey":"u7Rm9QeGJTy3Vn5m2MxXz0SYvEABq+6lNdYtPlZgLDE=",
+    "cloudName":"ddrkbkpnz",
+    "apiKey":"916425799487676",
+    "apiSecret":"VLFXZOx0f-OLBTVmDQBwsa7kziQ"
+}
