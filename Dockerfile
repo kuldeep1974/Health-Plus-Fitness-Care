@@ -4,23 +4,19 @@ FROM node:18-alpine
 # Set working directory
 WORKDIR /app
 
-# Copy package.json and package-lock.json first to leverage Docker caching
-COPY package*.json ./
+# Copy package files from client directory
+COPY client/package*.json ./
 
 # Install dependencies
 RUN npm install
 
-# Copy the rest of your app's code
-COPY . .
+# Copy the rest of the client app
+COPY client/ .
 
-# Build your app (if it's a React/Vue/etc. app)
+# Build your app
 RUN npm run build
 
-# Install a static server to serve build (for frontend apps like React)
+# Install serve and start the app
 RUN npm install -g serve
-
-# Expose port (default React/Vue port is 3000)
 EXPOSE 3000
-
-# Start the app using serve (if it's a frontend build)
 CMD ["serve", "-s", "build", "-l", "3000"]
