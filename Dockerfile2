@@ -1,0 +1,26 @@
+# Use the official Node.js image
+FROM node:18-alpine
+
+# Set working directory
+WORKDIR /app
+
+# Copy package files
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy rest of app
+COPY . .
+
+# Build the app (React/Vue/etc.)
+RUN npm run build
+
+# Install static server
+RUN npm install -g serve
+
+# Expose app port
+EXPOSE 3000
+
+# Serve the built app
+CMD ["serve", "-s", "build", "-l", "3000"]
