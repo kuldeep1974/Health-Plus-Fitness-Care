@@ -1,0 +1,30 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+body {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+  }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scroll Bar */
+/* ::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: black;
+
+}
+::-webkit-scrollbar-thumb {
+    background-color: #1A8EFD;
+    border-radius: 4rem;
+} */
+.home-section{
+    background-color: black;
+}
