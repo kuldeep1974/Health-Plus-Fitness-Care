@@ -1,22 +1,26 @@
-# Use the official Node.js LTS image as a base
+# Use Node.js 18 Alpine as base image
 FROM node:18-alpine
 
 # Set working directory
 WORKDIR /app
 
-# Copy package files from client directory
-COPY client/package*.json ./
+# Copy package files
+COPY package*.json ./
 
 # Install dependencies
 RUN npm install
 
-# Copy the rest of the client app
-COPY client/ .
+# Copy all source files
+COPY . .
 
-# Build your app
+# Build the React app
 RUN npm run build
 
-# Install serve and start the app
+# Install serve globally to serve static files
 RUN npm install -g serve
-EXPOSE 3000
+
+# Expose port 3535 (since you want it on 3535)
+EXPOSE 3535
+
+# Run the app on port 3535
 CMD ["serve", "-s", "build", "-l", "3535"]
