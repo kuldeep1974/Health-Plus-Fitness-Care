@@ -18,5 +18,5 @@ RUN npm run build
 
 # Install serve and start the app
 RUN npm install -g serve
-EXPOSE 3535
+EXPOSE 3000
 CMD ["serve", "-s", "build", "-l", "3535"]
