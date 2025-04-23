@@ -1,0 +1,4 @@
+
+1. Go to database and connect to database
+2. Go to server folder and run commannd node index.js
+3. Go to client folder and run command npm start
